@@ -4,8 +4,11 @@ Created on Sep 24, 2015
 @author: sub253
 '''
 import csv
+import pandas
+
 def createDict(wordScoresFile):
     d={}
+    
     readfile = open(wordScoresFile, "r")
     reader=csv.reader(readfile,delimiter="\t")
     for word, score in reader:
